@@ -1,0 +1,37 @@
+
+
+.carousel-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  padding: 1rem;
+  background-color: #f9f9f9;
+}
+
+.carousel-photo {
+  max-width: 80%;
+  max-height: 400px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+button {
+  font-size: 1.5rem;
+  padding: 0.5rem 1rem;
+  background-color: #008cba;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover:not(:disabled) {
+  background-color: #005f73;
+}
+
+button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}

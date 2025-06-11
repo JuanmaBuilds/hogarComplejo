@@ -1,0 +1,5 @@
+<div class="carousel-container" (touchstart)="$event.preventDefault()">
+  <button (click)="goToPrevious()" [disabled]="currentIndex === 0">←</button>
+  <img [src]="currentPhoto" class="carousel-photo" />
+  <button (click)="goToNext()" [disabled]="currentIndex === photos.length - 1">→</button>
+</div>
