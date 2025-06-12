@@ -3,7 +3,7 @@ import { Component, Input } from '@angular/core';
 @Component({
   selector: 'photo-carrousell',
   templateUrl: './carrousell.component.html',
-  styleUrl: './carrousell.component.css'
+  styleUrls: ['./carrousell.component.css'],
 })
 export class CarrousellComponent {
   @Input() photos: string[] = [];
