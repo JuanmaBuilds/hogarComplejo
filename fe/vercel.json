@@ -1,0 +1,13 @@
+{
+  "functions": {
+    "dist/fe/server/server.mjs": {
+      "runtime": "nodejs18.x"
+    }
+  },
+  "rewrites": [
+    {
+      "source": "/(.*)",
+      "destination": "/api/ssr"
+    }
+  ]
+}
