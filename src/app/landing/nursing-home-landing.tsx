@@ -48,7 +48,7 @@ export default function NursingHomeLanding() {
             Hogar Complejo del Este
           </span>
         </Link>
-        <nav className="ml-auto flex gap-4 sm:gap-6">``
+        <nav className="ml-auto flex gap-4 sm:gap-6">
           <Link
             href="#about"
             className="text-sm font-medium hover:text-rose-600 transition-colors"
@@ -72,6 +72,12 @@ export default function NursingHomeLanding() {
             className="text-sm font-medium hover:text-rose-600 transition-colors"
           >
             Contacto
+          </Link>
+          <Link
+            href="/photo-gallery"
+            className="text-sm font-medium hover:text-rose-600 transition-colors"
+          >
+            Galería
           </Link>
         </nav>
       </header>
@@ -444,6 +450,17 @@ export default function NursingHomeLanding() {
                 </p>
               </div>
             </div>
+            <div className="mt-8 text-center">
+              <p className="text-gray-700 mb-4">
+                Conocé más sobre nuestro espacio visualizando la galería de fotos.
+              </p>
+              <Link
+                href="/photo-gallery"
+                className="inline-block bg-rose-600 text-white font-semibold px-6 py-2 rounded-md hover:bg-rose-700 transition-colors"
+              >
+                Ver Galería
+              </Link>
+            </div>
           </div>
         </section>
 
@@ -591,6 +608,28 @@ export default function NursingHomeLanding() {
         </section>
       </main>
 
+      <a
+        href="https://wa.me/5491139220767?text=Hola%2C%20quisiera%20hacer%20una%20consulta%20sobre%20el%20hogar"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="fixed bottom-6 right-6 z-50"
+      >
+        <button
+          className="bg-green-500 hover:bg-green-600 text-white font-bold py-3 px-4 rounded-full shadow-lg flex items-center gap-2"
+          aria-label="WhatsApp"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 32 32"
+            width="20"
+            height="20"
+            fill="white"
+          >
+            <path d="M16.003 2.667a13.31 13.31 0 0 0-11.42 19.95L2 30l7.633-2.46a13.31 13.31 0 1 0 6.37-24.873Zm0 24.002a10.682 10.682 0 0 1-5.548-1.567l-.397-.24-4.53 1.46 1.493-4.416-.26-.45a10.68 10.68 0 1 1 9.243 5.213Zm5.907-7.877c-.32-.16-1.893-.933-2.186-1.04-.293-.107-.507-.16-.72.16s-.827 1.04-1.013 1.253c-.187.213-.373.24-.693.08s-1.36-.5-2.593-1.6c-.958-.853-1.6-1.893-1.787-2.213-.187-.32-.02-.493.14-.653.147-.147.32-.373.48-.56.16-.187.213-.32.32-.533.107-.213.053-.4-.027-.56-.08-.16-.72-1.733-.987-2.373-.26-.627-.52-.533-.72-.533-.187 0-.4-.027-.613-.027-.213 0-.56.08-.853.373s-1.12 1.093-1.12 2.667 1.147 3.093 1.307 3.307c.16.213 2.24 3.413 5.44 4.773.76.327 1.347.52 1.813.667.76.24 1.453.213 2 .133.613-.093 1.893-.773 2.16-1.52.267-.747.267-1.387.187-1.52-.08-.133-.293-.213-.613-.373Z"/>
+          </svg>
+          WhatsApp
+        </button>
+      </a>
       <footer className="flex flex-col gap-2 sm:flex-row py-6 w-full shrink-0 items-center px-4 md:px-6 border-t bg-white">
         <div className="flex items-center gap-2">
           <Heart className="h-5 w-5 text-rose-600" />
